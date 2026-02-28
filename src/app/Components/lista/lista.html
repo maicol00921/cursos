@@ -1,0 +1,22 @@
+<div class="listado-container">
+  <div *ngFor="let curso of Cursos; let i = index" class="curso-card">
+    
+    <div class="info-curso">
+      <h3 class="nombre-curso">{{ curso.nombre }}</h3>
+      <p class="duracion-curso">Duración: <b>{{ curso.duracion }} horas</b></p>
+      
+      <span class="badge-estado" 
+            [ngClass]="{'estado-activo': curso.estado === 'Activo', 'estado-inactivo': curso.estado === 'Inactivo'}">
+        {{ curso.estado }}
+      </span>
+    </div>
+
+    <div class="acciones-curso">
+      <button class="btn-alternar" (click)="alternar(i)">
+        {{ curso.estado === 'Activo' ? 'Desactivar' : 'Activar' }}
+      </button>
+      <button class="btn-eliminar" (click)="eliminar(i)">Eliminar</button>
+    </div>
+    
+  </div>
+</div>

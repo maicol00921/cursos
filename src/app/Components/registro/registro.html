@@ -1,0 +1,10 @@
+<div class="formulario">
+    <input type="text" [(ngModel)]="nuevo.nombre" placeholder="Nombre">
+    <input type="number"[(ngModel)]="nuevo.duracion" placeholder="duracion">
+    <select [(ngModel)]="nuevo.nivel">
+        <option>Basico</option>
+        <option>Intermedio</option>
+        <option>Avanzado</option>
+    </select>
+    <button (click)="registrar()">Registrar Curso</button>
+</div>

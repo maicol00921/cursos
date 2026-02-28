@@ -1,0 +1,105 @@
+.listado-container {
+  width: 100%;
+  margin-top: 30px;
+}
+
+
+.curso-card {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  
+  background-color: #ffffff; 
+  border: 1px solid #eeeeee; 
+  border-radius: 8px;
+  padding: 20px; 
+  margin-bottom: 15px; 
+  
+ 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+
+.info-curso {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; 
+}
+
+.nombre-curso {
+  margin: 0;
+  color: #333333;
+  font-size: 18px; 
+  font-weight: 700;
+}
+
+.duracion-curso {
+  margin: 0;
+  color: #777777; 
+  font-size: 14px;
+}
+
+
+.badge-estado {
+  display: inline-block;
+  padding: 4px 10px; 
+  border-radius: 12px; 
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize; 
+  align-self: flex-start; 
+}
+
+
+
+.estado-activo {
+  background-color: #ffffff;
+  color: #155724;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.estado-inactivo {
+  background-color: #ffffff;
+  color: #ce0c0c;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+
+.acciones-curso {
+  display: flex;
+  gap: 10px; 
+}
+
+
+.btn-alternar, .btn-eliminar {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px; 
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s; 
+}
+
+
+.btn-alternar {
+  background-color: #ffc107; 
+  color: #212529;
+  
+  &:hover {
+    background-color: #e0a800;
+  }
+}
+
+
+.btn-eliminar {
+  background-color: #dc3545; 
+  color: white;
+  
+  &:hover {
+    background-color: #c82333;
+  }
+}
